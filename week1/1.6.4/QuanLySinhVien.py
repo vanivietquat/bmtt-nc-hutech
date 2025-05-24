@@ -81,13 +81,13 @@ class QuanLySinhVien:
 
     def xepLoaiHocLuc(self, sv:SinhVien):
         if (sv._diemTB >= 8):
-            sv_hocLuc = "Gioi"
+            sv._hocLuc = "Gioi"
         elif (sv._diemTB >= 6.5):
-            sv. hocLuc = "Kha"
+            sv._hocLuc = "Kha"
         elif (sv._diemTB >= 5):
-            sv_hocLuc = "Trung bình"
+            sv._hocLuc = "Trung bình"
         else:
-            sv_hocLuc = "Yeu"
+            sv._hocLuc = "Yeu"
 
     def showSinhVien(self, listSV):
         print("{:<8} {:<18} {:<8} {:<8} {:<8} {:<8}".format("ID", "Name", "Sex", "Major", "Diem TB", "HocLuc"))
